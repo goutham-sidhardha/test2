@@ -38,3 +38,39 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Revenue\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c472704e-7371-4e1f-a928-9d5d26847e6b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"e910889f-9a8b-4a47-8a8c-fa21ae3e12f6\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Revenue\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 3235c023-6f04-4a92-96b3-d427d4d5e6b4
+  - id: Viz_2
+    answer:
+      name: Total Quantity by Monthly Commit Date
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Quantity] [Commit Date].monthly"
+      answer_columns:
+      - name: Total Quantity
+      - name: Month(Commit Date)
+      table:
+        table_columns:
+        - column_id: Month(Commit Date)
+          headline_aggregation: MIN-MAX
+        - column_id: Total Quantity
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Month(Commit Date)
+        - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Commit Date)
+        - column_id: Total Quantity
+        axis_configs:
+        - x:
+          - Month(Commit Date)
+          "y":
+          - Total Quantity
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9c8a12b4-7d2b-4a4e-9aae-3e6cdba3e992\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"d842147b-b2d1-4393-9d7b-969327731b39\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#2770ef\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: a8a41a9d-6ffc-499a-9c83-a33d34ffac36
