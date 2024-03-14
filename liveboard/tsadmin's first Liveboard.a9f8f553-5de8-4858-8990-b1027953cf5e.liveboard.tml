@@ -74,3 +74,9 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Commit Date)\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9c8a12b4-7d2b-4a4e-9aae-3e6cdba3e992\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": false}},{\"id\": \"d842147b-b2d1-4393-9d7b-969327731b39\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Commit Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Quantity\",\"color\": \"#2770ef\"}]}"
       display_mode: CHART_MODE
     viz_guid: a8a41a9d-6ffc-499a-9c83-a33d34ffac36
+  layout:
+    tiles:
+    - visualization_id: Viz_2
+      size: SMALL
+    - visualization_id: Viz_1
+      size: MEDIUM
